@@ -21,6 +21,5 @@
         android:id="@+id/resultFragment"
         android:name="com.example.lovecalculator.ui.results.ResultFragment"
         android:label="Your Love Result"
-        tools:layout="@layout/result_fragment">
-    </fragment>
+        tools:layout="@layout/result_fragment"/>
 </navigation>

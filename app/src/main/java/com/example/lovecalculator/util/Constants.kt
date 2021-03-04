@@ -5,5 +5,7 @@ class Constants {
         const val BASE_URL = "https://love-calculator.p.rapidapi.com/"
         const val API_KEY = "your API-Key"
         const val HEADER_HOST =  "love-calculator.p.rapidapi.com"
+        const val CHANNEL_ID = "channel_ID"
+        const val NOTIFICATION_ID = 100
     }
 }

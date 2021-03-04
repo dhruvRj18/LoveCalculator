@@ -1,10 +1,14 @@
 package com.example.lovecalculator.ui.inputs
 
 import android.util.Log
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
+import com.example.lovecalculator.R
 import com.example.lovecalculator.data.ResultResponse
 import com.example.lovecalculator.repository.ResultRepository
+import com.example.lovecalculator.util.Constants
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
@@ -26,11 +30,13 @@ class InputViewModel @ViewModelInject constructor(
         result.postValue(res)
         eventChannel.send(MyEvent.NavigateToResultFragment)
 
+
     }
 
 
     sealed class MyEvent {
         object NavigateToResultFragment : MyEvent()
     }
+
 
 }
