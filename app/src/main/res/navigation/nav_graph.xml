@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inputFragment">
+
+
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.lovecalculator.ui.inputs.InputFragment"
+        android:label="Love Calculator"
+        tools:layout="@layout/input_fragment">
+        <action
+            android:id="@+id/action_inputFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.lovecalculator.ui.results.ResultFragment"
+        android:label="Your Love Result"
+        tools:layout="@layout/result_fragment">
+    </fragment>
+</navigation>
